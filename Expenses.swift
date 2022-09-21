@@ -14,6 +14,6 @@ class Expenses: NSManagedObject{
     @NSManaged var name: String!
     @NSManaged var price: Double
     @NSManaged var qty: NSNumber!
-    @NSManaged var total: Double
+   // @NSManaged var total: Double
     @NSManaged var deletedDate: Date?
 }
