@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     @IBAction func saveBtn(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Expenses", in: context)
+       // let entity = NSEntityDescription.entity(forEntityName: "Expenses", in: context)
         let newExpense = Expenses(entity: entity!, insertInto: context)
         var price1 = "\(priceTF.text)"
         let total: Double
