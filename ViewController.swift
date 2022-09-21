@@ -31,12 +31,12 @@ class ViewController: UIViewController {
         newExpense.deletedDate =  Date()
         newExpense.id = expenseList.count as NSNumber
         newExpense.name = nameTF.text
-        
-        newExpense.price = price1 as? Double
+        newExpense.price = 3.2
+       // newExpense.price = price1 as? Double
         newExpense.qty = qtyTF.text as? NSNumber
-        
-        total = Double(priceTF.text as! Double) * Double(qtyTF.text as! Double)
-        newExpense.total = total
+        newExpense.total = 4.0
+       // total = Double(priceTF.text as! Double) * Double(qtyTF.text as! Double)
+       // newExpense.total = total
         print("newExpense data:",newExpense)
         do {
             try context.save()
