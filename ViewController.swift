@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var priceTF: UITextField!
-  //  @IBOutlet weak var qtyTF: UITextField!
+    @IBOutlet weak var qtyTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
