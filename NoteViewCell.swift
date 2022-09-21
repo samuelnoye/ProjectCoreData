@@ -12,7 +12,7 @@ class NoteViewCell: UITableViewCell {
     
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var qtyLbl: UILabel!
-    @IBOutlet weak var priceLbl: UILabel!
+   // @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var totalLbl: UILabel!
     
     override func awakeFromNib() {
