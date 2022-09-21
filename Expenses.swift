@@ -8,7 +8,7 @@
 import CoreData
 
 
-@objc(Expense)
+@objc(Expenses)
 class Expenses: NSManagedObject{
     @NSManaged var id: NSNumber!
     @NSManaged var name: String!
