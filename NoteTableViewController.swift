@@ -7,6 +7,7 @@
 
 import UIKit
 var expenseList = [Expenses]()
+var myList = []()
 class NoteTableViewController: UITableViewController {
 
     
@@ -23,13 +24,14 @@ class NoteTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return myList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteViewCell", for: indexPath) as! NoteViewCell
         let thisExpense: Expenses!
+        
         thisExpense = expenseList[indexPath.row]
         cell.nameLbl.text = thisExpense.name
         cell.priceLbl.text = String(thisExpense.price)

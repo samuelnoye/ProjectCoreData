@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         newExpense.id = expenseList.count as NSNumber
         newExpense.name = nameTF.text
         
-        newExpense.price = price1 as? Double
+     // newExpense.price = price1 as? Double
         newExpense.qty = qtyTF.text as? NSNumber
         
         total = Double(priceTF.text as! Double) * Double(qtyTF.text as! Double)
